@@ -69,14 +69,14 @@ namespace Akka.Monitoring.StatsD.Demo
 
         static void Main(string[] args)
         {
-   
+
             _system = ActorSystem.Create("akka-performance-demo");
             var registeredMonitor = ActorMonitoringExtension.RegisterMonitor(_system, new ActorStatsDMonitor("localhost"));
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Starting up actor system...");
             var goodbye = _system.ActorOf<GoodbyeActor>();
             var hello = _system.ActorOf<HelloActor>();
-            if(registeredMonitor)
+            if (registeredMonitor)
                 Console.WriteLine("Successfully registered StatsD monitor");
             else
                 Console.WriteLine("Failed to register StatsD monitor");
@@ -90,7 +90,7 @@ namespace Akka.Monitoring.StatsD.Demo
                 count--;
             }
             Console.WriteLine("Starting a conversation between actors");
-            goodbye.Tell(new Tuple<IActorRef,string>(hello,"Start"));
+            goodbye.Tell(new Tuple<IActorRef, string>(hello, "Start"));
             while (ManualResetEvent.WaitOne())
             {
                 Console.WriteLine("Shutting down...");

@@ -99,7 +99,7 @@ namespace Akka.Monitoring.ApplicationInsights.Demo
             goodbye.Tell(new Tuple<IActorRef, string>(hello, "Start"));
             goodbye1.Tell(new Tuple<IActorRef, string>(hello1, "Start"));
             Thread.Sleep(5000);
-            
+
             while (ManualResetEvent.WaitOne())
             {
                 Console.WriteLine("Shutting down...");

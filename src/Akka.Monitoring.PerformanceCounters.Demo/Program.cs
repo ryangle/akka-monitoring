@@ -13,8 +13,8 @@ namespace Akka.Monitoring.PerformanceCounters.Demo
             {
                 var stopwatch = new Stopwatch();
                 stopwatch.Start();
-                
-                            
+
+
                 Thread.Sleep(650);//add some work to simulate message box growth, and see some timing metrics
                 Console.WriteLine("work done");
                 Context.Gauge("akka.messageboxsize", ((ActorCell)Context).NumberOfMessages);
@@ -22,9 +22,9 @@ namespace Akka.Monitoring.PerformanceCounters.Demo
                 Context.IncrementCounter("akka.custom.metric3");
                 Context.IncrementMessagesReceived();
 
-                stopwatch.Stop();    
-                Context.Timing("akka.handlertime",stopwatch.ElapsedTicks);                
-            });            
+                stopwatch.Stop();
+                Context.Timing("akka.handlertime", stopwatch.ElapsedTicks);
+            });
         }
 
         protected override void PreStart()
@@ -106,7 +106,7 @@ namespace Akka.Monitoring.PerformanceCounters.Demo
                 new CustomMetrics
                 {
                     Counters = { "akka.custom.metric1", "akka.custom.metric2", "akka.custom.metric3" },
-                    Gauges = { "akka.messageboxsize"},
+                    Gauges = { "akka.messageboxsize" },
                     Timers = { "akka.handlertime" }
                 });
 

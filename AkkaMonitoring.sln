@@ -1,35 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.22823.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akka.Monitoring", "src\Akka.Monitoring\Akka.Monitoring.csproj", "{34AACFDC-6EEF-4A03-B510-B6B50C1646AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Akka.Monitoring", "src\Akka.Monitoring\Akka.Monitoring.csproj", "{3D7D15D3-A142-43A0-96BD-281DEA10EBD9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DE243DF9-3ECE-49D8-88CA-B43509112C78}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Akka.Monitoring.ApplicationInsights", "src\Akka.Monitoring.ApplicationInsights\Akka.Monitoring.ApplicationInsights.csproj", "{277C99F4-55E2-4FEA-A98F-6AF766910037}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{78A6ADD3-D924-4872-979B-C3161A97F491}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Akka.Monitoring.ApplicationInsights.Demo", "src\Akka.Monitoring.ApplicationInsights.Demo\Akka.Monitoring.ApplicationInsights.Demo.csproj", "{9B8A20CF-CB9E-4AE0-9A02-DBA7D3FF3146}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akka.Monitoring.StatsD", "src\Akka.Monitoring.StatsD\Akka.Monitoring.StatsD.csproj", "{E1F18844-8C93-4661-BBBD-9257584DAECC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Akka.Monitoring.PerformanceCounters", "src\Akka.Monitoring.PerformanceCounters\Akka.Monitoring.PerformanceCounters.csproj", "{E32EDCC3-4375-487D-8D07-C00CE0C779A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akka.Monitoring.StatsD.Demo", "src\Akka.Monitoring.StatsD.Demo\Akka.Monitoring.StatsD.Demo.csproj", "{9AA04DC5-796E-4645-B65C-4271DDFD9098}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Akka.Monitoring.PerformanceCounters.Demo", "src\Akka.Monitoring.PerformanceCounters.Demo\Akka.Monitoring.PerformanceCounters.Demo.csproj", "{AC5626AF-A915-4D35-BD4C-996B742C0A2E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{35EFD718-7428-468A-959B-8A12F9AB3DAA}"
-	ProjectSection(SolutionItems) = preProject
-		build.fsx = build.fsx
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Akka.Monitoring.StatsD", "src\Akka.Monitoring.StatsD\Akka.Monitoring.StatsD.csproj", "{FA1D017D-9C48-4ADF-B443-1C7FA90D7DBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akka.Monitoring.ApplicationInsights", "src\Akka.Monitoring.ApplicationInsights\Akka.Monitoring.ApplicationInsights.csproj", "{E2933E70-D188-49AF-A48B-22CF96A7CD00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Akka.Monitoring.StatsD.Demo", "src\Akka.Monitoring.StatsD.Demo\Akka.Monitoring.StatsD.Demo.csproj", "{CB7AFE03-84E9-4A60-948C-5CFB951EC8EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akka.Monitoring.ApplicationInsights.Demo", "src\Akka.Monitoring.ApplicationInsights.Demo\Akka.Monitoring.ApplicationInsights.Demo.csproj", "{40796FA1-09AA-4527-B983-2F047B01DF8E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{067A1885-DD58-44EB-8AB8-F9FFF03D0570}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akka.Monitoring.PerformanceCounters", "src\Akka.Monitoring.PerformanceCounters\Akka.Monitoring.PerformanceCounters.csproj", "{D73890EF-D9CF-483E-BF7F-07C066621331}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akka.Monitoring.PerformanceCounters.Demo", "src\Akka.Monitoring.PerformanceCounters.Demo\Akka.Monitoring.PerformanceCounters.Demo.csproj", "{21AD2A03-C07A-4651-9CF7-2AA6FDD22FC0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution-Items", "Solution-Items", "{E71D5F84-38B7-488C-9CAF-76AC837B9A4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,44 +27,47 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{34AACFDC-6EEF-4A03-B510-B6B50C1646AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{34AACFDC-6EEF-4A03-B510-B6B50C1646AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{34AACFDC-6EEF-4A03-B510-B6B50C1646AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{34AACFDC-6EEF-4A03-B510-B6B50C1646AB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E1F18844-8C93-4661-BBBD-9257584DAECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E1F18844-8C93-4661-BBBD-9257584DAECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E1F18844-8C93-4661-BBBD-9257584DAECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E1F18844-8C93-4661-BBBD-9257584DAECC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9AA04DC5-796E-4645-B65C-4271DDFD9098}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9AA04DC5-796E-4645-B65C-4271DDFD9098}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9AA04DC5-796E-4645-B65C-4271DDFD9098}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9AA04DC5-796E-4645-B65C-4271DDFD9098}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E2933E70-D188-49AF-A48B-22CF96A7CD00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E2933E70-D188-49AF-A48B-22CF96A7CD00}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E2933E70-D188-49AF-A48B-22CF96A7CD00}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E2933E70-D188-49AF-A48B-22CF96A7CD00}.Release|Any CPU.Build.0 = Release|Any CPU
-		{40796FA1-09AA-4527-B983-2F047B01DF8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{40796FA1-09AA-4527-B983-2F047B01DF8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{40796FA1-09AA-4527-B983-2F047B01DF8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{40796FA1-09AA-4527-B983-2F047B01DF8E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D73890EF-D9CF-483E-BF7F-07C066621331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D73890EF-D9CF-483E-BF7F-07C066621331}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D73890EF-D9CF-483E-BF7F-07C066621331}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D73890EF-D9CF-483E-BF7F-07C066621331}.Release|Any CPU.Build.0 = Release|Any CPU
-		{21AD2A03-C07A-4651-9CF7-2AA6FDD22FC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{21AD2A03-C07A-4651-9CF7-2AA6FDD22FC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{21AD2A03-C07A-4651-9CF7-2AA6FDD22FC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{21AD2A03-C07A-4651-9CF7-2AA6FDD22FC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D7D15D3-A142-43A0-96BD-281DEA10EBD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D7D15D3-A142-43A0-96BD-281DEA10EBD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D7D15D3-A142-43A0-96BD-281DEA10EBD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D7D15D3-A142-43A0-96BD-281DEA10EBD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{277C99F4-55E2-4FEA-A98F-6AF766910037}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{277C99F4-55E2-4FEA-A98F-6AF766910037}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{277C99F4-55E2-4FEA-A98F-6AF766910037}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{277C99F4-55E2-4FEA-A98F-6AF766910037}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B8A20CF-CB9E-4AE0-9A02-DBA7D3FF3146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B8A20CF-CB9E-4AE0-9A02-DBA7D3FF3146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B8A20CF-CB9E-4AE0-9A02-DBA7D3FF3146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B8A20CF-CB9E-4AE0-9A02-DBA7D3FF3146}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E32EDCC3-4375-487D-8D07-C00CE0C779A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E32EDCC3-4375-487D-8D07-C00CE0C779A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E32EDCC3-4375-487D-8D07-C00CE0C779A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E32EDCC3-4375-487D-8D07-C00CE0C779A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC5626AF-A915-4D35-BD4C-996B742C0A2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC5626AF-A915-4D35-BD4C-996B742C0A2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC5626AF-A915-4D35-BD4C-996B742C0A2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC5626AF-A915-4D35-BD4C-996B742C0A2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA1D017D-9C48-4ADF-B443-1C7FA90D7DBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA1D017D-9C48-4ADF-B443-1C7FA90D7DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA1D017D-9C48-4ADF-B443-1C7FA90D7DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA1D017D-9C48-4ADF-B443-1C7FA90D7DBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB7AFE03-84E9-4A60-948C-5CFB951EC8EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB7AFE03-84E9-4A60-948C-5CFB951EC8EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB7AFE03-84E9-4A60-948C-5CFB951EC8EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB7AFE03-84E9-4A60-948C-5CFB951EC8EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{E1F18844-8C93-4661-BBBD-9257584DAECC} = {78A6ADD3-D924-4872-979B-C3161A97F491}
-		{9AA04DC5-796E-4645-B65C-4271DDFD9098} = {78A6ADD3-D924-4872-979B-C3161A97F491}
-		{E2933E70-D188-49AF-A48B-22CF96A7CD00} = {78A6ADD3-D924-4872-979B-C3161A97F491}
-		{40796FA1-09AA-4527-B983-2F047B01DF8E} = {78A6ADD3-D924-4872-979B-C3161A97F491}
-		{D73890EF-D9CF-483E-BF7F-07C066621331} = {78A6ADD3-D924-4872-979B-C3161A97F491}
-		{21AD2A03-C07A-4651-9CF7-2AA6FDD22FC0} = {78A6ADD3-D924-4872-979B-C3161A97F491}
+		{277C99F4-55E2-4FEA-A98F-6AF766910037} = {067A1885-DD58-44EB-8AB8-F9FFF03D0570}
+		{9B8A20CF-CB9E-4AE0-9A02-DBA7D3FF3146} = {067A1885-DD58-44EB-8AB8-F9FFF03D0570}
+		{E32EDCC3-4375-487D-8D07-C00CE0C779A3} = {067A1885-DD58-44EB-8AB8-F9FFF03D0570}
+		{AC5626AF-A915-4D35-BD4C-996B742C0A2E} = {067A1885-DD58-44EB-8AB8-F9FFF03D0570}
+		{FA1D017D-9C48-4ADF-B443-1C7FA90D7DBA} = {067A1885-DD58-44EB-8AB8-F9FFF03D0570}
+		{CB7AFE03-84E9-4A60-948C-5CFB951EC8EA} = {067A1885-DD58-44EB-8AB8-F9FFF03D0570}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2FAC981-F002-4B08-B62D-D961A7B70CAD}
 	EndGlobalSection
 EndGlobal
